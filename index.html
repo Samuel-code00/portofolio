@@ -8,31 +8,35 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="navbar">
-        <a href="mailto:samphabz00@gmail.com">mail@samphabz00@gmail.com</a>
+    <div class="navbar" id="navbar">
+        <p class="sam">Sam.</p>
+        <a href="mailto:samphabz00@gmail.com" class="mail">mail@samphabz00@gmail.com</a>
 
-        <div class="links">
-            <a href="">Services</a>
-            <a href="">Works</a>
-            <a href="">Resume</a>
-            <a href="">Skills</a>
+        <div class="links" id="links">
+            <a href="#services">Services</a>
+            <a href="#works">Works</a>
+            <a href="#resume">Resume</a>
+            <a href="#skills">Skills</a>
             <a href="">Testimonial</a>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
         </div>
 
         <div class="hire">
-            <a href="">Hire me!</a>
+            <a href="#contact">Hire me!</a>
         </div>
-        <div class="menu-icon">
+        <div class="menu-icon" id="menu-icon">
             <i class="bx bx-menu bx-lg"></i>
         </div>
     </div>
 
-    <div class="herosection">
+    <div class="herosection" id="container">
         <div class="text">
-            <h1 class="name">I am Samuel</h1>
-            <h1 class="work">Web Developer + Solar Engineer</h1>
-            
+           <div class="heading">
+              <h1 class="name">I am <span class="blink">Samuel</span></h1>
+              <h1 class="work"><span class="typed-text"></span></h1> 
+           </div>
+
+           <div class="paragraph">
             <p>I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
 
             <div class="icons">
@@ -48,6 +52,7 @@
                 </div>
 
             </div>
+           </div>
 
         </div>
 
@@ -77,45 +82,104 @@
     </div>
 
     <!-- services -->
-  <div class="service-container">
-    <div class="service-head">
-        <h1>My Quality Services</h1>
-        <p>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
-    </div>
-    <div class="container2">
-        <div id="sec-1" class="sec-1">
-            <img src="assets/images/" alt="">
-          <p>Web Develoment</p>
-          <p></p>
-          
-        </div>
-  
-        <div id="sec-1" class="sec-2">
-           <img src="assets/images/frontend.png" alt=""> 
-          <p>Frontend Developer</p>
-          <p></p>
-          
-        </div>
-  
-        <div id="sec-1" class="sec-3">
-            <img src="assets/images/backend.png" alt="">
-          <p>Backend Developer</p>
-          <p></p>
-          
-        </div>
-         
-        <div id="sec-1" class="sec-4">
-          <p>Solar Engineer</p>
-          <p></p>
+  <div class="service-container" id="services">
+      <div class="service-head">
+          <h1>My Quality Services</h1>
+          <p>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
+      </div>
+      <div class="container2">
+          <div id="sec-1" class="sec-1">
+            <i class='bx bx-code-alt bx-lg'></i>
+            <p>Web Develoment</p>
+            <p></p>
+            
+          </div>
     
-        </div>
-  
-    </div>
+          <div id="sec-1" class="sec-2">
+            <i class='bx bxs-paint bx-lg'></i>
+            <p>Frontend Developer</p>
+            <p></p>
+            
+          </div>
+    
+          <div id="sec-1" class="sec-3">
+            <i class='bx bx-server bx-lg'></i>
+            <p>Backend Developer</p>
+            <p></p>
+            
+          </div>
+           
+          <div id="sec-1" class="sec-4">
+              <i class='bx bxs-sun bx-lg'></i>
+            <p>Solar Engineer</p>
+            <p></p>
+      
+          </div>
+      </div>
   </div>
+
+  <!-- My works -->
+   <div class="work-container" id="works">
+     <p class="recent">My Recent Works</p>
+     <div class="works">
+        <div class="work-content">
+            <img src="assets/images/E-commerce.png" alt="">
+             <div class="sub-content">
+                <div>
+                   <h1>E-commerce</h1>
+                   <p>Project was about shop an E-commerce website</p>
+                </div>
+                <div class="arrow">
+                    <a href="https://first-app-three-theta.vercel.app/" target="_blank"><i class='bx bx-arrow-back bx-lg bx-fade-right'></i></a>
+                </div>
+    
+             </div>
+        </div>
+    
+        <div class="work-content">
+            <img src="assets/images/Solar-company.png" alt="">
+             <div class="sub-content">
+               <div>
+                   <h1>Solaris Energy</h1>
+                   <p>Project was about Solaris a solar website</p>
+               </div>
+                <div class="arrow">
+                    <a href="https://solar-website-ebon.vercel.app/" target="_blank"><i class='bx bx-arrow-back bx-lg bx-fade-right'></i></a>
+                </div>
+             </div>
+        </div>
+        <div class="work-content">
+            <img src="assets/images/E-commerce.png" alt="">
+             <div class="sub-content">
+                <div>
+                    <h1>E-commerce</h1>
+                    <p>Project was about shop an E-commerce website</p>
+                </div>
+                <div class="arrow">
+                    <a href="https://first-app-three-theta.vercel.app/" target="_blank"><i class='bx bx-arrow-back bx-lg bx-fade-right'></i></a>
+                </div>
+             </div>
+        </div>
+    
+        <div class="work-content">
+            <img src="assets/images/Solar-company.png" alt="">
+             <div class="sub-content">
+                <div>
+                    <h1>Solaris Energy</h1>
+                    <p>Project was about Solaris a solar website</p>
+                </div>
+                <div class="arrow">
+                   <a href="https://solar-website-ebon.vercel.app/" target="_blank"> <i class='bx bx-arrow-back bx-lg bx-fade-right'></i></a>
+                </div>
+             </div>
+        </div>
+     </div>
+      
+   </div>
 
   <!-- Resume -->
 
-  <div class="resume-container">
+  <div class="resume-container" id="resume">
     <div class="experience">
         <h1>My Experience</h1>
         <div class="date">
@@ -163,7 +227,7 @@
   </div>
 
   <!-- My Skills -->
-   <div class="my-skills">
+   <div class="my-skills" id="skills">
       <div class="skills-head">
           <h1>My Skills</h1>
           <p>We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.</p>
@@ -214,7 +278,7 @@
 
    <!-- Contact -->
 
-   <div class="contact-container">
+   <div class="contact-container" id="contact">
       <div class="contact-input">
           <div class="contact-head">
             <h1>Let’s work together!</h1>
@@ -267,10 +331,8 @@
             <div class="footer-links">
                 <a href="">Services</a>
                 <a href="">Works</a>
-                <a href="">Resume</a>
                 <a href="">Skills</a>
-                <a href="">Testimonial</a>
-                <a href="">Contact</a>
+                <a href="">Experience</a>
             </div>
             <p>&copy; 2024 All Rights Reserved by <b>Samuel arinze</b></p>
         </div>
