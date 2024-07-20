@@ -567,6 +567,7 @@ option{
 .message button{
     font-size: 20px;
     color: white;
+    outline: none;
     background-color: #5828b8;
     border: none;
 }
@@ -654,7 +655,6 @@ span:hover{
         display: flex;
         flex-direction: column;
         margin: auto;
-        border: 1px solid;
     }
     /* .navbar{
         width: 100%; 
@@ -717,9 +717,17 @@ span:hover{
         flex-direction: column;
     }
 
+    .paragraph p{
+        width: 540px;
+    }
+    
+    .icons{
+        width: 90%;
+        padding: 10px;
+    }
     .pics{
         display: block;
-        width: 50%;
+        width: 60%;
         height: 300px;
         margin: auto;
         margin-top: 20px;
@@ -753,7 +761,10 @@ span:hover{
         bottom: 25px;
     }
     .work{
-        font-size: 20px
+        width: 90%;
+        padding: 10px;
+        height: 10vh;
+        font-size: 18px
     }
 
     .work-content {
@@ -795,7 +806,7 @@ span:hover{
     .service-box {
         background-color: #140c1c;
         border-radius: 20px;
-        width: 500px;
+        width: 400px;
         padding: 40px;
         box-sizing: border-box;
         text-align: center;
