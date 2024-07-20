@@ -55,3 +55,74 @@ function erase() {
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(type, 1000);
 });
+
+document.getElementById('menu-icon').addEventListener('click', function() {
+    var navbar = document.getElementById('navbar');
+    if (navbar.classList.contains('expanded')) {
+        navbar.classList.remove('expanded');
+    } else {
+        navbar.classList.add('expanded');
+    }
+});
+
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    let formValid = true;
+    
+    // Clear previous errors
+    document.querySelectorAll('.error').forEach(error => error.textContent = '');
+
+    // Validation
+    if (!document.getElementById('firstName').value) {
+        document.getElementById('firstNameError').textContent = 'First name is required';
+        formValid = false;
+    }
+
+    if (!document.getElementById('lastName').value) {
+        document.getElementById('lastNameError').textContent = 'Last name is required';
+        formValid = false;
+    }
+
+    if (!document.getElementById('email').value) {
+        document.getElementById('emailError').textContent = 'Email address is required';
+        formValid = false;
+    }
+
+    if (!document.getElementById('service').value) {
+        document.getElementById('serviceError').textContent = 'Service selection is required';
+        formValid = false;
+    }
+
+    if (!document.getElementById('message').value) {
+        document.getElementById('messageError').textContent = 'Message is required';
+        formValid = false;
+    }
+
+    if (formValid) {
+        this.submit();
+    }
+});
+
+
+AOS.init();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.num');
+    counters.forEach(counter => {
+        counter.innerText = '0';
+        const updateCounter = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const increment = target / 2000;
+
+            if (count < target) {
+                counter.innerText = `${Math.ceil(count + increment)}`;
+                setTimeout(updateCounter, 10);
+            } else {
+                counter.innerText = target;
+            }
+        };
+        updateCounter();
+    });
+});

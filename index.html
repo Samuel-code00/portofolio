@@ -6,6 +6,8 @@
     <title>Profile</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="navbar" id="navbar">
@@ -29,29 +31,31 @@
         </div>
     </div>
 
-    <div class="herosection" id="container">
+    <div data-aos="fade-up" class="herosection" id="container">
         <div class="text">
            <div class="heading">
               <h1 class="name">I am <span class="blink">Samuel</span></h1>
               <h1 class="work"><span class="typed-text"></span></h1> 
            </div>
 
+            <img class="pics" src="assets/images/my picture.jpeg" alt="my picture">
+
            <div class="paragraph">
-            <p>I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
-
-            <div class="icons">
-                <div class="cv">
-                   <a href="" class="cv">Download CV <i class="bx bx-download"></i></a>
-                </div>
-
-                <div class="media-icons">
-                    <a href=""><i class="bx bxl-facebook"></i></a>
-                    <a href=""><i class="bx bxl-linkedin"></i></a>
-                    <a href=""><i class="bx bxl-github"></i></a>
-                    <a href=""><i class="bx bxl-whatsapp"></i></a>
-                </div>
-
-            </div>
+              <p>I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
+  
+              <div class="icons">
+                  <div class="cv">
+                     <a href="CV -Samuel-Software Engineer.pdf" download="CV -Samuel-Software Engineer.pdf" class="cv">Download CV <i class="bx bx-download"></i></a>
+                  </div>
+  
+                  <div class="media-icons">
+                      <a href=""><i class="bx bxl-facebook bx-lg"></i></a>
+                      <a href=""><i class="bx bxl-linkedin bx-lg"></i></a>
+                      <a href=""><i class="bx bxl-github bx-lg"></i></a>
+                      <a href=""><i class="bx bxl-whatsapp bx-lg"></i></a>
+                  </div>
+  
+              </div>
            </div>
 
         </div>
@@ -62,64 +66,58 @@
 
     </div>
 
-    <div class="counters">
+    <div data-aos="fade-up" class="counters">
         <div class="years">
-            <p class="num">2</p>
+            <p class="num" data-target="5">0</p>
             <p>Years of Experience</p>
         </div>
         <div class="years">
-            <p class="num">25+</p>
+            <p class="num" data-target="25">0</p><span class="num1">+</span>
             <p>Project Completed</p>
         </div>
         <div class="years">
-            <p class="num">20</p>
+            <p class="num" data-target="20">0</p>
             <p>Happy Clients</p>
         </div>
         <div class="years">
-            <p class="num">2</p>
+            <p class="num" data-target="5">0</p>
             <p>Years of Experience</p>
         </div>
     </div>
 
     <!-- services -->
-  <div class="service-container" id="services">
-      <div class="service-head">
-          <h1>My Quality Services</h1>
-          <p>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
-      </div>
-      <div class="container2">
-          <div id="sec-1" class="sec-1">
-            <i class='bx bx-code-alt bx-lg'></i>
-            <p>Web Develoment</p>
-            <p></p>
-            
-          </div>
+    <div data-aos="fade-up" class="service-container" id="services">
+        <div class="service-head">
+            <h1>My Quality Services</h1>
+            <p>We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.</p>
+        </div>
+        <div data-aos="fade-up" class="container2">
+            <div class="service-box">
+                <i class='bx bx-code-alt bx-lg'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eveniet dolores tempore delectus assumenda quis dolore deleniti consequatur velit omnis provident aliquam expedita illum eos debitis ullam asperiores dolorum soluta?</p>
+            </div>
+            <div class="service-box">
+                <i class='bx bxs-paint bx-lg'></i>
+                <h3>Frontend Developer</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure deserunt soluta earum accusantium voluptates. Ipsa accusamus at cupiditate qui iusto cumque deleniti veritatis placeat dicta quam! Tenetur, illo perspiciatis. Laboriosam!</p>
+            </div>
+            <div class="service-box">
+                <i class='bx bx-server bx-lg'></i>
+                <h3>Backend Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime enim voluptatum consectetur dolor! Temporibus sunt nihil soluta et excepturi voluptates assumenda adipisci possimus alias laudantium! Natus quia nisi aperiam necessitatibus.</p>
+            </div>
+            <div class="service-box">
+                <i class='bx bxs-sun bx-lg'></i>
+                <h3>Solar Engineer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat distinctio incidunt dolores aspernatur temporibus cupiditate delectus eligendi harum at, omnis cumque pariatur aliquid illo debitis et! Rem numquam facere velit!</p>
+            </div>
+        </div>
+    </div>
     
-          <div id="sec-1" class="sec-2">
-            <i class='bx bxs-paint bx-lg'></i>
-            <p>Frontend Developer</p>
-            <p></p>
-            
-          </div>
-    
-          <div id="sec-1" class="sec-3">
-            <i class='bx bx-server bx-lg'></i>
-            <p>Backend Developer</p>
-            <p></p>
-            
-          </div>
-           
-          <div id="sec-1" class="sec-4">
-              <i class='bx bxs-sun bx-lg'></i>
-            <p>Solar Engineer</p>
-            <p></p>
-      
-          </div>
-      </div>
-  </div>
 
   <!-- My works -->
-   <div class="work-container" id="works">
+   <div data-aos="fade-up" class="work-container" id="works">
      <p class="recent">My Recent Works</p>
      <div class="works">
         <div class="work-content">
@@ -179,7 +177,7 @@
 
   <!-- Resume -->
 
-  <div class="resume-container" id="resume">
+  <div data-aos="fade-up" class="resume-container" id="resume">
     <div class="experience">
         <h1>My Experience</h1>
         <div class="date">
@@ -202,7 +200,7 @@
 
     </div>
 
-    <div class="education">
+    <div data-aos="fade-up" class="education">
         <h1>My Education</h1>
 
         <div class="date">
@@ -227,13 +225,13 @@
   </div>
 
   <!-- My Skills -->
-   <div class="my-skills" id="skills">
+   <div data-aos="fade-up" class="my-skills" id="skills">
       <div class="skills-head">
           <h1>My Skills</h1>
           <p>We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.</p>
       </div>
       
-      <div class="skill-container">
+      <div data-aos="fade-up" class="skill-container">
         <div>
             <div class="skill-icons">
                 <i class="bx bxl-html5 bx-lg"></i>
@@ -275,34 +273,48 @@
         </div>
 
    </div>
+   <!-- testimonail -->
+   
 
    <!-- Contact -->
 
-   <div class="contact-container" id="contact">
+   <div data-aos="fade-up" class="contact-container" id="contact">
       <div class="contact-input">
           <div class="contact-head">
             <h1>Let’s work together!</h1>
             <p>I design and code beautifully simple things and i love what i do. Just simple like that!</p>
           </div>
 
+          <form id="contactForm" action="https://formspree.io/f/xeojobpq" method="POST">
           <div class="inputs">
-            <input type="text" placeholder="First name">
-            <input type="text" placeholder="Last name">
-            <input type="email" placeholder="Email address">
-            <input type="tel" placeholder="Phone number">
-            <select name="" id="">
-              <option value="">-Please choose an option-</option>
-              <option value="">Web Development</option>
-              <option value="">Frontend Development</option>
-              <option value="">Backend Development</option>
-            </select>
-  
-            <textarea name="" id="" placeholder="Message"></textarea>
+              <input type="text" id="firstName" name="Firstname" placeholder="First name" required>
+              <span class="error" id="firstNameError"></span>
+
+              <input type="text" id="lastName" name="Lastname" placeholder="Last name" required>
+              <span class="error" id="lastNameError"></span>
+
+              <input type="email" id=email name="Email" placeholder="Email address" required>
+              <span class="error" id="emailError"></span>
+
+              <input type="tel" id="phone" name="Phone" placeholder="Phone number" required>
+              <span class="error" id="phoneError"></span>
+
+              <select name="Service" id="service" required>
+                  <option value="">-Please choose an option-</option>
+                  <option value="webDevelopment">Web Development</option>
+                  <option value="frontendDevelopment">Frontend Development</option>
+                  <option value="backendDevelopment">Backend Development</option>
+              </select>
+              <span class="error" id="serviceError"></span> 
+
+              <textarea name="Message" id="message" placeholder="Message" required></textarea>
+              <span class="error" id="messageError"></span>
           </div>
 
           <div class="message">
-            <a href="" class="cv">Send Message</a>
+            <button type="submit">Send Message</button>
          </div>
+           </form>
     
         </div>
         
@@ -343,6 +355,7 @@
 
 
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
    <script src="script.js"></script> 
 </body>
 </html>
