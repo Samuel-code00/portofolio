@@ -659,16 +659,17 @@ span:hover{
         display: flex;
         flex-direction: column;
         margin: auto;
+        background-color: #1a0b25;
     }
     .hire{
        min-width: 100px;
         
     }
     .navbar{
-        width: 80%;
-        padding: 20px; 
+        width: 100%;
     }
     .menu-icon{
+        padding-right: 20px;
         display: block;
         cursor: pointer;
     }
