@@ -665,7 +665,8 @@ span:hover{
         
     }
     .navbar{
-        width: 100%; 
+        width: 80%;
+        padding: 20px; 
     }
     .menu-icon{
         display: block;
@@ -782,6 +783,11 @@ span:hover{
         border-radius: 50%;
         width: 60px;
         height: 60px; 
+    }
+    .cv{
+        min-width: 150px;
+        
+        
     }
 
     /* work */
@@ -978,7 +984,8 @@ span:hover{
 
 
     .message button{
-        font-size: 20px;
+        border-radius: 40px;
+        font-size: 18px;
         color: white;
         outline: none;
         background-color: #5828b8;
