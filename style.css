@@ -583,6 +583,14 @@ option{
     justify-content: center;
 }
 
+.mail{
+    color: white;
+    text-decoration: none;
+}
+.mail:hover{
+    color: #7948dc;
+}
+
 .details{
     display: flex;
     align-items: center;
@@ -863,8 +871,9 @@ span:hover{
     .service-box {
         background-color: #140c1c;
         border-radius: 20px;
-        width: 400px;
-        padding: 40px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
         box-sizing: border-box;
         text-align: center;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -897,6 +906,10 @@ span:hover{
         display: flex;
         flex-direction: column;
     }
+
+    .skill-icons{
+        border: 2px solid #441769;
+    }
     
     .skill-container{
         display: flex;
@@ -914,6 +927,11 @@ span:hover{
     .skills-head p{
         width: 90%;
         margin: auto ;   
+    }
+
+    .title{
+        font-size: 22px;
+        font-weight: bolder;
     }
 
     /*  */
