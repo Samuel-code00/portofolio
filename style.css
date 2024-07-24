@@ -583,11 +583,11 @@ option{
     justify-content: center;
 }
 
-.mail{
+.email{
     color: white;
     text-decoration: none;
 }
-.mail:hover{
+.email:hover{
     color: #7948dc;
 }
 
