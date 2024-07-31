@@ -1,11 +1,20 @@
+// script.js
 document.getElementById('menu-icon').addEventListener('click', function() {
-    let navLinks = document.getElementsById('links');
-    if (navLinks.style.display === "none"){
-        navLinks.style.display = "block"
-    } else{
-        navLinks.style.display = "block"
-    }
-    
+    const links = document.getElementById('links');
+    links.classList.toggle('active');
+});
+
+document.getElementById('close-icon').addEventListener('click', function() {
+    const links = document.getElementById('links');
+    links.classList.remove('active');
+});
+
+const navLinks = document.querySelectorAll('.links a');
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        const links = document.getElementById('links');
+        links.classList.remove('active');
+    });
 });
 
 let isFixed = false;
